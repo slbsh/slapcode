@@ -8,4 +8,3 @@ Read `test.rs` for expected behaviour.
 - Don't Clone the `HashMap`
 - You may Clone the `Vec` or individual `Tokens`, but only if you're sure you have to.
 - (optional) do it without unsafe. (I used unsafe, but it might be possible to perhaps?).
-- you may use nightly features.

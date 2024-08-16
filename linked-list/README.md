@@ -1,7 +1,6 @@
-# It's a 2 parter!
-1. Implement a `From<Vec<T>> for List<T>`
-2. Implement `fn sort(&mut self)` for `List<T>`
+# its like a list, but linked!
+implement `from` and `sort` for the list
 
 # Rules:
-- it must be constant space complexity, ie you can't collect into `HashSet` :>
-- dont make it absolutely suck (optional)
+- `sort` must be constant space complexity, ie you can't collect into `HashSet` :>
+- dont swap elements to sort, swap pointers

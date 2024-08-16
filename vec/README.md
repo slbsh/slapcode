@@ -1,7 +1,6 @@
-# Vecs! (or actually just one)
+# Mom can we have a Vec? No, we have Vec at home.
 Create a Vec! (dynamically allocated array) Simple right?
 
 # Rules
 - `#![no_std]`
-- No `alloc` or `collections`
-- use `libc`
+- use only `core::mem`, `core::ptr`, and `libc`
