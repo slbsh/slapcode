@@ -1,0 +1,2 @@
+# Slapcode
+Leetcode, but slap!  
