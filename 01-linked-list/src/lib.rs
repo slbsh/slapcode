@@ -3,7 +3,7 @@
 #![allow(clippy::option_map_unit_fn, clippy::wrong_self_convention, clippy::uninit_assumed_init, clippy::new_without_default, non_camel_case_types)]
 
 #[repr(transparent)]
-pub struct List<λ>(*mut Node<λ>);
+pub struct List<λ>(*mut Node<λ>); // power of lambda!
 
 pub struct Node<λ> {
     next: *mut Node<λ>,
