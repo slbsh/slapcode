@@ -49,6 +49,7 @@ impl Stack {
 }
 
 impl Clone for Stack {
+    // hint: std::slice::from_raw_parts
     fn clone(&self) -> Self {
         todo!("do clone")
     }
