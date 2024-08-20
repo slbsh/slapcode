@@ -2,7 +2,11 @@
 Leetcode, but it really hits ya. *whacc*  
   
 Not essentially leetcode style, most of these will have you implement something based on a framework.  
-Each problem will have a `README.md` with the Rules and Instructions
+Each problem will have a `README.md` with the Rules and Instructions  
+  
+There's also the `softie` branch, which has easier versions of the problems.  
+The `README.md` will cover the changes.
+
 
 ## General Rules
 (these might be overriden by the problem's rules)  
