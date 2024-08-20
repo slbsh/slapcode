@@ -4,6 +4,28 @@
 
 use std::collections::HashMap;
 
+#[derive(Debug, PartialEq, Eq, Hash)]
+pub struct Key {
+    ident: &'static str,
+    version: usize,
+}
+
+impl From<&'static str> for Key {
+    fn from(value: &'static str) -> Self {
+        Self::new(value)
+    }
+}
+
+impl Key {
+    pub fn new(ident: &'static str) -> Self {
+        Self::new_with_version(ident, 0)
+    }
+
+    pub fn new_with_version(ident: &'static str, version: usize) -> Self {
+        Self { ident, version }
+    }
+}
+
 #[derive(Debug, PartialEq, Clone)]
 pub enum Token<'a> {
     Macro(&'a str),
@@ -23,7 +45,7 @@ impl<'a> Token<'a> {
     }
 }
 
-pub fn process(map: &mut HashMap<&str, Vec<Token>>) {
+pub fn process(map: HashMap<Key, Vec<Token>>) -> HashMap<&str, Vec<Token>> {
     todo!("do the thing")
 }
 
