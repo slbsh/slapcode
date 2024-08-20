@@ -1,6 +1,6 @@
 use crate::List;
+use rand::{Rng, SeedableRng};
 use std::fmt::{self, Debug};
-use rand::{SeedableRng, Rng};
 
 impl<T: Debug> Debug for List<T> {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
