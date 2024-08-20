@@ -2,12 +2,6 @@
 
 extern "C" {
 
-// remove when yer done
-#include <stdexcept>
-[[noreturn]] void todo(const char* message) {
-   throw std::runtime_error(message);
-}
-
 // cpp has a `std::optional` buuuut, ffi doesn't support it :<
 struct Opt {
    bool has_value;
@@ -31,11 +25,19 @@ class Stack {
       Stack() {}
 
       void push(int data) {
-         todo("Implement push");
+         auto new_node = std::make_unique<Node>(data);
+         if (top) new_node->next = std::move(top);
+         top = std::move(new_node);
+         ++len;
       }
 
       Opt pop() {
-         todo("Implement pop");
+         if (is_empty()) return Opt {false, 0};
+
+         int value = top->data;
+         top = std::move(top->next);
+         len--;
+         return Opt {true, value};
       }
 
       Opt peek() const {
