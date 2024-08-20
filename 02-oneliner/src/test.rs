@@ -8,7 +8,7 @@ fn one() {
 
 #[test]
 fn two() {
-    let vec = vec![9, 4, 3, 2;
+    let vec = vec![9, 4, 3, 2];
     assert_eq!(do_thing(vec), -1);
 }
 
