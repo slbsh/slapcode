@@ -1,0 +1,9 @@
+[package]
+name = "async"
+version = "0.1.0"
+edition = "2021"
+license = "0BSD"
+authors = ["slbsh"]
+
+[dependencies]
+rand = { version = "0.8", features = ["small_rng"] }

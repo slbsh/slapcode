@@ -4,7 +4,7 @@ Leetcode, but it really hits ya. *whacc*
 Not essentially leetcode style, most of these will have you implement something based on a framework.  
 Each problem will have a `README.md` with the Rules and Instructions  
   
-**For all my softie fellas**
+**For all my softie fellas**  
 There's also the `softie` branch, which has easier versions of the problems.  
 
 **After you're done**  
@@ -26,5 +26,7 @@ I ye got somethin better do PR!
 - [ ] - bug hunt - find obscure bugs in code
 - [ ] - game of life - implement conway's game of life
 - [ ] - compression - implement a compression algorithm
+- [ ] - pool - implement a pool allocator
+- [ ] - async - make a async runtime
 
 if ye wanna add one of these, add a new one to this list, or add somethin else feel free to PR! :D
