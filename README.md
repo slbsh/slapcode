@@ -27,6 +27,6 @@ I ye got somethin better do PR!
 - [ ] - game of life - implement conway's game of life
 - [ ] - compression - implement a compression algorithm
 - [ ] - pool - implement a pool allocator
-- [ ] - async - make a async runtime
+- [ ] - mpmc - mpmc queue
 
 if ye wanna add one of these, add a new one to this list, or add somethin else feel free to PR! :D
