@@ -9,7 +9,7 @@ There's also the `softie` branch, which has easier versions of the problems.
 
 **After you're done**  
 check out the `solutions` branch to see how ye stack up.  
-I ye got somethin better do PR!  
+If you got something better make a PR!  
 
 ## General Rules
 (these might be overriden by the problem's rules)  
