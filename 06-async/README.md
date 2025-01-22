@@ -3,4 +3,5 @@
 implement an async runtime which spawns a future on the current thread and runs it to completion.
 
 # Rules
-- Dont make it cancer :)
+- Implement a custom waker
+- Don't busy loop

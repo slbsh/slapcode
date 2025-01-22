@@ -1,11 +1,11 @@
-use crate::Runtime;
+use crate::spawn_blocking;
 use std::sync::atomic::{AtomicU8, AtomicBool, Ordering};
 
 #[test]
 fn test() {
 	static FLAG: AtomicBool = AtomicBool::new(false);
 
-	Runtime::spawn_blocking(async { 
+	spawn_blocking(async { 
 		println!("Hello, world!");
 		FLAG.store(true, Ordering::Relaxed);
 	});
@@ -23,7 +23,7 @@ fn test2() {
 		FLAG.store(true, Ordering::Relaxed);
 	}
 
-	Runtime::spawn_blocking(foo());
+	spawn_blocking(foo());
 
 	assert_eq!(FLAG.load(Ordering::Relaxed), true);
 }
@@ -37,7 +37,7 @@ fn test3() {
 		println!("ur async smells");
 	}
 
-	Runtime::spawn_blocking(async {
+	spawn_blocking(async {
 		println!("Hello, world!");
 		COUNT.fetch_add(1, Ordering::Relaxed);
 		foo().await;
